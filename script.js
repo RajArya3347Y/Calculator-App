@@ -21,28 +21,29 @@ calcButtons.forEach((calcButton) => {
 		else if (calcButton.innerText === "=") {
 			screen.innerText = eval(screen.innerText);
 		}
-		else if (lastText === "+" || lastText === "-" || lastText === "/" || lastText === "*"){
-			if(calcButton.innerText === "+" || calcButton.innerText === "/"){
-				screen.innerText = screen.innerText.slice(0,-1) + calcButton.innerText;
+		else if (lastText === "+" || lastText === "-" || lastText === "/" || lastText === "*") {
+			if (calcButton.innerText === "+" || calcButton.innerText === "/") {
+				screen.innerText = screen.innerText.slice(0, -1) + calcButton.innerText;
 				lastText = calcButton.innerText;
 			}
-			else if(calcButton.innerText === "\u2A2F"){
-				screen.innerText = screen.innerText.slice(0,-1) + "*";
+			else if (calcButton.innerText === "\u2A2F") {
+				screen.innerText = screen.innerText.slice(0, -1) + "*";
 				lastText = "*";
 			}
-			else if(calcButton.innerText === "\u2212"){
-				screen.innerText = screen.innerText.slice(0,-1) + "-";
+			else if (calcButton.innerText === "\u2212") {
+				screen.innerText = screen.innerText.slice(0, -1) + "-";
 				lastText = "-";
 			}
-			else{
+			else {
 				screen.innerText += calcButton.innerText;
+				lastText = calcButton.innerText;
 			}
 		}
 		else if (calcButton.innerText === "\u2A2F") {
 			screen.innerText += "*";
 			lastText = "*";
 		}
-		else if(calcButton.innerText === "\u2212"){
+		else if (calcButton.innerText === "\u2212") {
 			screen.innerText += "-";
 			lastText = "-";
 		}
