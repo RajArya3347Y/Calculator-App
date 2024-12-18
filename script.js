@@ -20,7 +20,7 @@ calcButtons.forEach((calcButton) => {
 		}
 		else if (calcButton.innerText === "=") {
 			let result = eval(screen.innerText);
-	
+			
 				screen.innerText = result;
 		}
 		else if (lastText === "+" || lastText === "-" || lastText === "/" || lastText === "*") {
