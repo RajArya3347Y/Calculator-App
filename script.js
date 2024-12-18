@@ -19,7 +19,9 @@ calcButtons.forEach((calcButton) => {
 			lastText = screen.innerText[screen.innerText.length() - 1]
 		}
 		else if (calcButton.innerText === "=") {
-			screen.innerText = eval(screen.innerText).toPrecision(10);
+			let result = eval(screen.innerText);
+	
+				screen.innerText = result;
 		}
 		else if (lastText === "+" || lastText === "-" || lastText === "/" || lastText === "*") {
 			if (calcButton.innerText === "+" || calcButton.innerText === "/") {
