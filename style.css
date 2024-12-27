@@ -1,30 +1,30 @@
-*{
+* {
 	padding: 0;
 	margin: 0;
 }
 
 
-body{
+body {
 	height: 100vh;
 	display: flex;
 	align-items: center;
-	justify-content:center;
+	justify-content: center;
 	font-family: 'Dosis', sans-serif;
-	background: linear-gradient(320deg,#eb92be,#ffef78,#63c9b4);
+	background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
 }
 
-.main{
+.main {
 	backdrop-filter: blur(5.5px);
-	-webkit-backdrop-filter:blur(5.5px) ;
-	background:rgba(255, 255, 255, 0.45);
-	border: 1px solid rgba(255, 255, 255, 0.1) ;
+	-webkit-backdrop-filter: blur(5.5px);
+	background: rgba(255, 255, 255, 0.45);
+	border: 1px solid rgba(255, 255, 255, 0.1);
 	border-radius: 10px;
 	box-shadow: 0px 4px 30px rgba(35, 35, 35, 0.1);
 	height: 70vh;
 	width: 40vh;
 }
 
-.screen{
+.screen {
 	height: 10%;
 	background-color: white;
 	border-radius: 10px;
@@ -37,11 +37,11 @@ body{
 	font-size: 2rem;
 }
 
-.calc-buttons{
+.calc-buttons {
 	height: 100%;
 }
 
-.calc-buttons-row{
+.calc-buttons-row {
 	display: flex;
 	gap: 16px;
 	margin: 16px;
@@ -50,7 +50,7 @@ body{
 	height: 12.5%;
 }
 
-.calc-button{
+.calc-button {
 	background-color: white;
 	border: none;
 	border-radius: 12px;
@@ -62,19 +62,19 @@ body{
 	width: 21%;
 }
 
-.calc-button:hover{
+.calc-button:hover {
 	opacity: 0.8;
 }
 
-.double{
+.double {
 	flex-grow: 2;
 }
 
-.triple{
+.triple {
 	flex-grow: 3;
 }
 
-.calc-button:last-child{
+.calc-button:last-child {
 	background-color: #c1346e;
 	color: white;
 }
