@@ -21,7 +21,7 @@ calcButtons.forEach((calcButton) => {
 		else if (calcButton.innerText === "=") {
 			let result = eval(screen.innerText);
 
-				screen.innerText = result;
+				screen.innerText = result.toString().slice(0,10);
 		}
 		else if (lastText === "+" || lastText === "-" || lastText === "/" || lastText === "*") {
 			if (calcButton.innerText === "+" || calcButton.innerText === "/") {
